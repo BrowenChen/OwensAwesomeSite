@@ -1,0 +1,23 @@
+extends layout
+
+block content
+
+	.col-md-4
+
+
+
+		include leftSide	
+	.col-md-8
+		.container(style="min-height: 300px;")
+			include partials/flash		
+		
+			
+			h1 About
+			p Testing testing testing, This is a test
+			
+
+	.container
+		input(type="text", ng-model="yourName", placeholder="enter a name")
+		#test.well
+			p test
+		h1 hello {{yourName}}! {{test}}
