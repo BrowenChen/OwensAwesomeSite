@@ -6,12 +6,12 @@
 var myApp = angular.module("myApp", ['ngRoute', 'ngResource'])
 .config(function ($routeProvider, $locationProvider) {
   $routeProvider.
-    when('/view1', {
-      templateUrl: 'partials/partial1',
+    when('/test', {
+      templateUrl: 'partials/test',
       controller: 'myCtrl'
     }).
     otherwise({
-      redirectTo: '/view1'
+      redirectTo: '/test'
     });
 
   $locationProvider.html5Mode(true);
