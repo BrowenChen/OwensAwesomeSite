@@ -26,24 +26,23 @@ html(ng-app='myApp')
 		
 
 
-	body(style="background-color:#171d25")
+	body(style="background-color:#171d25; background-image: url(/img/40-blurr_bg.png);")
 
 
-
-		.row
+		.row.animated.fadeIn._1
 			//- Navigation
 			include partials/navbar
 
 		//- Main content
 
 
-		#body.row(style="min-height:500px;")
+		#body.row
 
 
 			.col-sm-4.col-sm-offset-1
 
 
-				.container
+				.container.animated.fadeIn._2
 					#test.h2 Logo
 					
 					ul.h3 Welcome
@@ -57,15 +56,9 @@ html(ng-app='myApp')
 					.row
 						p About me
 
-			.col-sm-7			
+			.col-sm-7.animated.fadeIn._3
 				div(ng-view)
-
-		br
-
-
-		
-
-		.footer
+		.footer.animated.fadeIn._4
 			#social-area.page(style="background-color:inherit;")
 
 				br
@@ -76,19 +69,19 @@ html(ng-app='myApp')
 							nav#social
 								ul
 									li
-										a(href='', title='Follow Me on Twitter', target='_blank', style="border-radius:20px;")
+										a(href='', title='Follow Me on Twitter', target='_blank', style="border-radius:30px;")
 											span.font-icon-social-twitter
 									li
-										a(href='http://dribbble.com/Bluxart', title='Follow Me on Dribbble', target='_blank', style="border-radius:20px;")
+										a(href='http://dribbble.com/Bluxart', title='Follow Me on Dribbble', target='_blank', style="border-radius:30px;")
 											span.font-icon-social-dribbble
 									li
-										a(href='https://www.facebook.com/Bluxart', title='Follow Me on Facebook', target='_blank', style="border-radius:20px;")
+										a(href='https://www.facebook.com/Bluxart', title='Follow Me on Facebook', target='_blank', style="border-radius:30px;")
 											span.font-icon-social-facebook
 									li
-										a(href='http://www.linkedin.com/in/alessioatzeni', title='Follow Me on LinkedIn', target='_blank', style="border-radius:20px;")
+										a(href='http://www.linkedin.com/in/alessioatzeni', title='Follow Me on LinkedIn', target='_blank', style="border-radius:30px;")
 											span.font-icon-social-linkedin
 									li
-										a(href='http://zerply.com/Bluxart/public', title='Follow Me on Zerply', target='_blank', style="border-radius:20px;")
+										a(href='http://zerply.com/Bluxart/public', title='Follow Me on Zerply', target='_blank', style="border-radius:30px;")
 											span.font-icon-social-zerply
 			
 				br
