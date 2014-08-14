@@ -31,6 +31,7 @@ var userController = require('./controllers/user');
 var apiController = require('./controllers/api');
 var contactController = require('./controllers/contact');
 
+var routes = require('./routes');
 /**
  * API keys and Passport configuration.
  */
@@ -122,6 +123,20 @@ app.use(express.static(path.join(__dirname, 'public'), { maxAge: week }));
  */
 
 app.get('/', homeController.index);
+
+app.get('/main', homeController.index);
+
+app.get('/testingPage', homeController.test);
+
+app.get('/blog', homeController.blog);
+app.get('/music', homeController.music);
+
+
+
+
+app.get('/partials/:name', routes.partials);
+
+
 app.get('/login', userController.getLogin);
 app.post('/login', userController.postLogin);
 app.get('/logout', userController.logout);
@@ -212,6 +227,10 @@ app.get('/auth/venmo', passport.authorize('venmo', { scope: 'make_payments acces
 app.get('/auth/venmo/callback', passport.authorize('venmo', { failureRedirect: '/api' }), function(req, res) {
   res.redirect('/api/venmo');
 });
+
+
+//Redirect all to routes.index
+app.get('*', homeController.index);
 
 /**
  * 500 Error Handler.
