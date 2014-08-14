@@ -1,0 +1,91 @@
+.navbar-default {
+  background: inherit;
+  border-radius: 0 0 5px 5px;
+  border: 0;
+  padding: 0;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
+  overflow: hidden;
+  float:none;
+
+}
+
+.navbar-default ul{
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.navbar-default .first a {
+  border-radius: 0 0 0 5px;
+}
+.navbar-default .navbar-brand {
+  margin-top: 10%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 200px;
+  height: 78px;
+  background: url('') no-repeat 0 50%;
+  border:2px dotted;
+  display:inline-block;
+}
+.navbar-default .navbar-nav > li {
+  left: 50%;
+  right:50%;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  /*border: 2px dotted;*/
+
+
+}
+.navbar-default .navbar-nav > li > a {
+  padding: 30px 25px;
+  
+  line-height: 18px;
+  color: #999;
+  border: none;
+  font-size: 85%;
+
+}
+.navbar-default .navbar-nav > li > a > i {
+  display: inline-block;
+}
+.navbar-default .navbar-nav > li.active > a,
+.navbar-default .navbar-nav > li.active:focus > a,
+.navbar-default .navbar-nav > li.active:hover > a,
+.navbar-default .navbar-nav > li:hover > a,
+.navbar-default .navbar-nav > li:focus > a,
+.navbar-default .navbar-nav > li.active > a:focus,
+.navbar-default .navbar-nav > li.active:focus > a:focus,
+.navbar-default .navbar-nav > li.active:hover > a:focus,
+.navbar-default .navbar-nav > li:hover > a:focus,
+.navbar-default .navbar-nav > li:focus > a:focus {
+  background-color: inherit;
+  color: #fff;
+  font-size: 100%;
+}
+
+
+#leftNav {
+  padding-top: 50px;
+}
+#leftNav ul{
+  font-size:90%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+  
+
+}
+
+#leftNav a{
+  color: silver;
+  border: none;
+}
+
+#leftNav ul >li > a:hover{
+  font-size: 105%;
+}
