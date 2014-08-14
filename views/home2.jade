@@ -1,0 +1,143 @@
+doctype html
+html(ng-app='myApp')
+	head
+		title Owen Chen
+		meta(http-equiv='content-type', content='text/html; charset=utf-8')
+		meta(name='description', content='')
+		meta(name='keywords', content='')
+
+
+		script(src="https://code.angularjs.org/1.2.1/angular.js")
+		script(src="https://code.angularjs.org/1.2.3/angular-route.js")
+		script(src="https://code.angularjs.org/1.2.3/angular-resource.js")
+		link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css')
+		script(type='text/javascript', src='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js')
+
+
+		script(src='/js/jquery.min.js')
+		script(src='/js/jquery.scrolly.min.js')
+		script(src='/js/jquery.poptrox.min.js')
+		script(src='/js/skel.min.js')
+		script(src='/js/init.js')
+
+		script(type='text/javascript', src='/js/angularApp.js')
+
+
+		link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Montserrat')
+		link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Dosis:500')		
+		link(rel='stylesheet', href='/css/overflow/skel.css')
+		link(rel='stylesheet', href='/css/overflow/style.css')
+		link(rel='stylesheet', href="/css/testStyle.css")
+
+
+
+		//- style.
+			.nav{
+			display:inline-block
+			}	
+
+			.nav li{
+			margin: 10px auto;
+			padding: 10px;
+
+			display:inline-block;
+			float: left;
+			}
+	body(style="background-image: url(/img/40-blurr_bg.png);")
+
+		//- Nav Bar
+		.container
+			.navbar.navbar-default
+				.navbar-header
+					//- .button.navbar-toggle(type="button", data-toggle="collapse")
+					//-	.span.sr-only Toggle Nav
+					//-	.span.icon-bar
+					//-	.span.icon-bar
+					//-	.span.icon-bar
+					.navbar-brand(href="/")
+				.collase.navbar-collapse
+					ul.nav.navbar-nav
+						li
+							a(href="/") Home
+								
+						li 
+							a(href="/") Music
+						li 
+							a(href="/") Code
+						li 
+							a(href="/") Blog
+		.container
+			.row
+				.col-sm-4
+					//- p(style="text-align:center;") Test
+					#leftNav
+						ul
+							li
+								a(href='') Fusion Guitarist • Audio Engineer
+								br
+								.sub.small Jazz, EDM, Rock
+							li
+								a(href="/test") Code • Design
+								br
+								.sub.small Past, Current, Future
+							li
+								a(href="/blog") Blog
+								br
+								.sub.small Books, Ideas, Ramblings
+
+
+
+
+
+				.col-sm-8
+				
+					//- div(ng-view)					
+					p(style="text-align:center;") Test
+			.row
+				
+
+
+
+
+
+		section#header
+
+			.row
+				footer
+					a.button.style2.scrolly.scrolly-centered(href='#banner', style="left: -20px;") Continue
+
+		
+
+
+		section#banner
+			header
+				h2 This is Overflow
+			p
+				| Test
+				
+			footer
+				a.button.style2.scrolly(href='#first') Act on this message
+		article#first.container.box.style1.right
+			a.image.fit(href='#')
+				img(src='/img/pic01.jpg', alt='')
+			.inner
+				header
+					h2
+						| Lorem ipsum
+						br
+						| &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;dolor sit amet
+				p
+					| Tortor faucibus ullamcorper nec tempus purus sed penatibus. Lacinia pellentesque eleifend vitae est elit tristique velit tempus etiam.
+		article.container.box.style1.left
+			a.image.fit(href='#')
+				img(src='/img/pic02.jpg', alt='')
+			.inner
+				header
+					h2
+						| Mollis posuere
+						br
+						| &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;lectus lacus
+				p
+					| Rhoncus mattis egestas sed fusce sodales rutrum et etiam ullamcorper. Etiam egestas scelerisque ac duis magna lorem ipsum dolor.
+
+
