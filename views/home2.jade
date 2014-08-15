@@ -7,16 +7,18 @@ html(ng-app='myApp')
 		meta(name='keywords', content='')
 
 
-		script(src="https://code.angularjs.org/1.2.1/angular.js")
-		script(src="https://code.angularjs.org/1.2.3/angular-route.js")
-		script(src="https://code.angularjs.org/1.2.3/angular-resource.js")
-		link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css')
-		script(type='text/javascript', src='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js')
+		script(src="/js/angular.js")
+		script(src="/js/angular-route.js")
+		script(src="/js/angular-resource.js")
+		link(rel='stylesheet', href='/css/bootstrap.css')
+		script(type='text/javascript', src='/js/bootstrap.js')
 
 		//- script(type='text/javascript', src='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.js')
 		//- link(rel='stylesheet', href='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.css')
-		link(href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css')
-		link(href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css')			
+		//- link(href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css')
+		//- link(href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css')			
+		link(href='/fonts/customFonts.css', rel='stylesheet', type='text/css')
+		link(href='/fonts/open-sans.css', rel='stylesheet', type='text/css')
 		script(src='/js/jquery.min.js')
 		script(src='/js/jquery.scrolly.min.js')
 		script(src='/js/jquery.poptrox.min.js')
@@ -32,8 +34,8 @@ html(ng-app='myApp')
 		//- script(type='text/javascript', src='/js/aprilzero.all.js')
 
 
-		link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Montserrat')
-		link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Dosis:500')		
+		//- link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Montserrat')
+		//- link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Dosis:500')		
 		link(rel='stylesheet', href='/css/overflow/skel.css')
 		link(rel='stylesheet', href='/css/overflow/style.css')
 		link(rel='stylesheet', href="/css/testStyle.css")
@@ -191,11 +193,11 @@ html(ng-app='myApp')
 						//- small Test
 
 					.item 
-						p More content	
+						p Mixing fusion with EDM
 					.item 
-						p More content	
+						p Robert Greene's Mastery	
 					.item 
-						p More content													
+						p Life as a triathlete													
 
 				script.
 					$(document).ready(function() {
@@ -241,33 +243,40 @@ html(ng-app='myApp')
 		
 
 		section#banner
-			.about-content
-				.row.fancy-head
-					h1 Welcome to my lair
+			//- .about-content
+			//-	.row.fancy-head
+			//-		h1 []
+
+			//-	.fancy-header
+			//-		h1
+			//-			| Welcome to my site
+			//-		h2
 
 
-
-				.fancy-header
-					h1
-						| Welcome to my site
-					h2
-						| ASDASASDASDASDSA
-
-				.personal-info
-					.container
-						.mri
-						.text
-							p
-								| Hi, This is my personal info page
+			//-	.personal-info
+			//-		.container
+			//-			.mri
+			//-			.text
+			//-				p
+			//-					| Hi, This is my personal info page
 
 
 			header
-				h2 This is Overflow
-			p
-				| Test
-				
+				h2 This is The header
+			
+			body(style="padding-bottom: 20px;")
+				.col-sm-3(style="text-align:center;")
+					p This is the body test
+				.col-sm-6(style="text-align:center;")
+					p this is second
+
+				.col-sm-3(style="text-align:center;")
+					p This is third				
+
+			br
+			br
 			footer
-				a.button.style2.scrolly(href='#first') Act on this message
+				a.button.style2.scrolly(href='#first') This is the footer
 		
 
 
