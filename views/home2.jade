@@ -40,6 +40,7 @@ html(ng-app='myApp')
 		link(rel='stylesheet', href='/css/overflow/style.css')
 		link(rel='stylesheet', href="/css/testStyle.css")
 
+		link(rel='stylesheet', href='/css/animate.css')
 
 		//- Owl carousel
 		link(rel="stylesheet", href="/css/owl.carousel.css")
@@ -243,40 +244,75 @@ html(ng-app='myApp')
 		
 
 		section#banner
-			//- .about-content
-			//-	.row.fancy-head
-			//-		h1 []
 
-			//-	.fancy-header
-			//-		h1
-			//-			| Welcome to my site
-			//-		h2
+			.row
+				header.about(style="height:10%; width:100%")
+					.main-header(style="")
+						h1 
+							| Testing testing
+						h2 
+							| This is The Second header
+				
+			.row(style="opacity:.7;")
+				body.banBody(style="padding-bottom: 20px; height: 70%;")
+					.col-sm-3.well(style="text-align:center;")
+						p This is the body test
+					.col-sm-6.well.text(style="text-align:center;")
+						p This is a short bio about me. Something about me header
+					
+						p something something something something somethingsomething something something something something
+							| something something something something something something something something something something something something something something something
+						br
+						p something something something something something something something something something something
+						button.btn.btn-info Read More here
+						br
+						br
+					.col-sm-3.well.stats()
+						.col-sm-6
+							dl.stats-1
+								dt 
+									| Name
+								dd 
+									| Owen Chen			
+								dt 
+									| Birthday 
+								dd 
+									| Nov 4th, 1993
+								dt 
+									| Proudest Moment
+								dd 
+									| Text	
+								dt 
+									| Favorite Book
+								dd 
+									| Master - Robert Greene
+						.col-sm-6
+							dl.stats-2.smaller
+								dt 
+									| Currently: 
+								dd 
+									| In the woodshed, immersed in the jazz language 
+								dt 
+									| Most Influential Book
+								dd 
+									| Mastery - Robert Greene	
+								dt 
+									| Life Goal
+								dd 
+									| Continuous creation, innovation, and the pursuit of knowledge.
+								dt
+									| Favorite Quote
+								dd
+									| "Insert a quote "
+																				
 
 
-			//-	.personal-info
-			//-		.container
-			//-			.mri
-			//-			.text
-			//-				p
-			//-					| Hi, This is my personal info page
+				br
+				br
 
-
-			header
-				h2 This is The header
-			
-			body(style="padding-bottom: 20px;")
-				.col-sm-3(style="text-align:center;")
-					p This is the body test
-				.col-sm-6(style="text-align:center;")
-					p this is second
-
-				.col-sm-3(style="text-align:center;")
-					p This is third				
-
-			br
-			br
-			footer
-				a.button.style2.scrolly(href='#first') This is the footer
+			.row
+				footer(style="height:20%;width:100%;")
+					a.button.style2.scrolly(href='#first') Some of my work
 		
 
 
