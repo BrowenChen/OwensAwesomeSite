@@ -13,7 +13,10 @@ html(ng-app='myApp')
 		link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css')
 		script(type='text/javascript', src='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js')
 
-
+		//- script(type='text/javascript', src='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.js')
+		//- link(rel='stylesheet', href='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.css')
+		link(href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css')
+		link(href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css')			
 		script(src='/js/jquery.min.js')
 		script(src='/js/jquery.scrolly.min.js')
 		script(src='/js/jquery.poptrox.min.js')
@@ -23,11 +26,19 @@ html(ng-app='myApp')
 		script(type='text/javascript', src='/js/angularApp.js')
 
 
+		//- link(rel='stylesheet', href='/css/all-b.css')
+
+		//- script(type='text/javascript', src='/js/libraries.js')
+		//- script(type='text/javascript', src='/js/aprilzero.all.js')
+
+
 		link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Montserrat')
 		link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Dosis:500')		
 		link(rel='stylesheet', href='/css/overflow/skel.css')
 		link(rel='stylesheet', href='/css/overflow/style.css')
 		link(rel='stylesheet', href="/css/testStyle.css")
+
+
 
 
 
@@ -43,70 +54,123 @@ html(ng-app='myApp')
 			display:inline-block;
 			float: left;
 			}
-	body(style="background-image: url(/img/40-blurr_bg.png);")
+	body(style="background-image: url(/img/40-blurr_bg.png);font-family: 'Open Sans Condensed', sans-serif;",ng-controller="myCtrl")
+				
+
 
 		//- Nav Bar
-		.container
-			.navbar.navbar-default
-				.navbar-header
-					//- .button.navbar-toggle(type="button", data-toggle="collapse")
-					//-	.span.sr-only Toggle Nav
-					//-	.span.icon-bar
-					//-	.span.icon-bar
-					//-	.span.icon-bar
-					.navbar-brand(href="/")
-				.collase.navbar-collapse
-					ul.nav.navbar-nav
-						li
-							a(href="/") Home
-								
-						li 
-							a(href="/") Music
-						li 
-							a(href="/") Code
-						li 
-							a(href="/") Blog
-		.container
-			.row
-				.col-sm-4
-					//- p(style="text-align:center;") Test
-					#leftNav
-						ul
-							li
-								a(href='') Fusion Guitarist • Audio Engineer
-								br
-								.sub.small Jazz, EDM, Rock
-							li
-								a(href="/test") Code • Design
-								br
-								.sub.small Past, Current, Future
-							li
-								a(href="/blog") Blog
-								br
-								.sub.small Books, Ideas, Ramblings
+		main#page.page.animated.fadeIn._1
+			.container
+				.navbar.navbar-default
+					.navbar-header
+						//- .button.navbar-toggle(type="button", data-toggle="collapse")
+						//-	.span.sr-only Toggle Nav
+						//-	.span.icon-bar
+						//-	.span.icon-bar
+						//-	.span.icon-bar
+						.navbar-brand(href="/")
+			h1.logo.home-logo
+				span.a
+					| O
+					span.p
+					| w
+					span.r
+					| e
+					span.i
+					| n
+					span.l
+					| C
+					span.z
+					| h
+					span.e
+					| e
+					span.r2
+					| n
+
+					//- .collase.navbar-collapse
+					//-	ul.nav.navbar-nav
+					//-		li
+					//-			a(href="/") Blog		
+					//-		li 
+					//-			a(href="/") Music
+					//-		li 
+					//-			a(href="/") Code
+					//-		li 
+					//-			a(href="/") Contact
+
+			
+		//- .container
+		//-	.row
+		//-		//- .col-sm-4
+		//-			//- p(style="text-align:center;") Test
+		//-			//- #leftNav
+		//-			//-	ul
+		//-			//-		li
+		//-			//-			a(href='') Fusion Guitarist • Audio Engineer
+		//-			//-			br
+		//-			//-			.sub.small Jazz, EDM, Rock
+		//-			//-		li
+		//-			//-			a(href="/test") Coder • Designer
+		//-			//-			br
+		//-			//-			.sub.small Past, Current, Future
+		//-			//-		li
+		//-			//-			a(href="/blog") Journal
+		//-			//-			br
+		//-			//-			.sub.small Books, Ideas, Ramblings
 
 
 
 
-
-				.col-sm-8
-				
-					//- div(ng-view)					
-					p(style="text-align:center;") Test
-			.row
-				
-
-
-
-
+		//-		.col-sm-12
+		//-			.div
+		//-				.wrapper.col-sm-12(style="opacity:.7")
+		//-					//- #page-title
+		//-						//- #page-title-inner
+		//-							h3
+		//-								//- span(style="background-color:inherit;") About
+		//-						#page-title-body.row
+		//-							.col-sm-4
+		//-								p Avatar
+		//-								//- p.pic(style="left: 50%;")
+		//-									img.displayed.img-circle(src='/img/npm.png', alt='', style="width: 90%;")					
+		//-							.col-sm-8
+		//-								p Test
 
 		section#header
 
-			.row
-				footer
-					a.button.style2.scrolly.scrolly-centered(href='#banner', style="left: -20px;") Continue
+			ul.sections-nav(style="top:35%;")
+				span.selection.cursor-only.animated.fadeIn._2
+				li.sport.animated.fadeIn._2
+					a.pjax(data-section='sport', href='sport/index.html')
+						strong
+							| Music
+						small
+							| Fusion Guitarist &amp; Audio Engineer
+				span.selection.cursor-only.animated.fadeIn._3			
+				li.explorer.animated.fadeIn._3
+					a.pjax(data-section='explorer', href='explorer/index.html')
+						strong
+							| Code
+						small
+							| CompSci &amp; CogSci at UCBerkeley
 
-		
+
+
+
+				li.journal.animated.fadeIn._4
+					a.pjax(data-section='journal', href='journal/index.html')
+						strong
+							| Blog
+						small
+							| Music, Books, Tech &amp;&nbsp;Life				
+			//- header
+			//-	h1 Test
+			//-	p another test
+			
+			footer.animated.fadeIn._5
+				a.button.style2.scrolly.scrolly-centered(href='#banner', style="left: 0px;") About Me
+
+	
 
 
 		section#banner
@@ -140,4 +204,15 @@ html(ng-app='myApp')
 				p
 					| Rhoncus mattis egestas sed fusce sodales rutrum et etiam ullamcorper. Etiam egestas scelerisque ac duis magna lorem ipsum dolor.
 
+		br
+		br
+		.container.text-center(style="color:silver;")
+			div  © 2014 Owen Chen
 
+			div
+				strong Personal 
+				| Porfolio
+
+			div
+
+		br				
