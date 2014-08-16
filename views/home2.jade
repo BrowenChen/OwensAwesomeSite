@@ -246,7 +246,7 @@ html(ng-app='myApp')
 		section#banner
 
 			.row
-				header.about(style="height:10%; width:100%")
+				header.about(style="height:10%; width:100%;")
 					.main-header(style="")
 						h1 
 							| Testing testing
@@ -257,6 +257,9 @@ html(ng-app='myApp')
 				body.banBody(style="padding-bottom: 20px; height: 70%;")
 					.col-sm-3.well(style="text-align:center;")
 						p This is the body test
+						br
+						br
+						img.img-circle(src="/img/analytics.png", style="width:70%;")
 					.col-sm-6.well.text(style="text-align:center;")
 						p This is a short bio about me. Something about me header
 					
@@ -264,9 +267,35 @@ html(ng-app='myApp')
 							| something something something something something something something something something something something something something something something
 						br
 						p something something something something something something something something something something
-						button.btn.btn-info Read More here
+						
 						br
 						br
+						.timeline
+							span.tooltip.tooltip-1 Installed Adobe Photoshop.
+							span.tooltip.tooltip-2
+								| Joined 
+								em Lifesum
+								|  as their very first Junior UI Designer.
+							span.tooltip.tooltip-3
+								| Moved to Copenhagen to join 
+								em Trustpilot
+								|  as their Product Designer.
+							span.tooltip.tooltip-4
+								| Freelanced for companies such as 
+								em Mail Chimp
+								| , 
+								em Conde Nast
+								| , etc.
+							span.tooltip.tooltip-5
+								| Moved my business to New York to work for 
+								em Articulate
+								|  as Product Designer.
+							span.tooltip.tooltip-6 Completed all my life&rsquo;s goals.		
+
+						br
+						br
+						button.btn.btn-info Read More here					
+
 					.col-sm-3.well.stats()
 						.col-sm-6
 							dl.stats-1
@@ -279,13 +308,13 @@ html(ng-app='myApp')
 								dd 
 									| Nov 4th, 1993
 								dt 
-									| Proudest Moment
+									| Something
 								dd 
 									| Text	
 								dt 
-									| Favorite Book
+									| Something else
 								dd 
-									| Master - Robert Greene
+									| Masdasda
 						.col-sm-6
 							dl.stats-2.smaller
 								dt 
@@ -299,7 +328,7 @@ html(ng-app='myApp')
 								dt 
 									| Life Goal
 								dd 
-									| Continuous creation, innovation, and the pursuit of knowledge.
+									| Something
 								dt
 									| Favorite Quote
 								dd
@@ -312,7 +341,7 @@ html(ng-app='myApp')
 
 			.row
 				footer(style="height:20%;width:100%;")
-					a.button.style2.scrolly(href='#first') Some of my work
+					a.button.style2.scrolly(href='#first') Latest Works
 		
 
 
@@ -320,6 +349,58 @@ html(ng-app='myApp')
 
 
 		article#first.container.box.style1.right
+			
+
+
+			#portfolio
+					.container
+						ul#grid.grid.effect-2
+							li
+								a(href='/') asd
+									img(src='/img/analytics.png')
+							li
+								a(href='singleproject.html') ds
+									img(src='assets/img/portfolio/3.jpg')
+							li
+								a(href='singleproject.html') asd
+									img(src='assets/img/portfolio/4.jpg')
+							li
+								a(href='singleproject.html') ddd
+									img(src='assets/img/portfolio/12.png')
+							li
+								a(href='singleproject.html') ggg
+									img(src='assets/img/portfolio/13.png')
+							li
+								a(href='singleproject.html') asd 
+									img(src='assets/img/portfolio/10.png')
+							li
+								a(href='singleproject.html') asd 
+									img(src='assets/img/portfolio/9.jpg')
+							li
+								a(href='singleproject.html') ds 
+									img(src='assets/img/portfolio/2.jpg')
+							li
+								a(href='singleproject.html') ggg 
+									img(src='assets/img/portfolio/14.png')
+							li
+								a(href='singleproject.html') gg 
+									img(src='assets/img/portfolio/5.jpg')
+							li
+								a(href='singleproject.html')
+									img(src='assets/img/portfolio/6.jpg')
+							li
+								a(href='singleproject.html')
+									img(src='assets/img/portfolio/7.jpg')
+							li
+								a(href='singleproject.html')
+									img(src='assets/img/portfolio/6.jpg')
+							li
+								a(href='singleproject.html')
+									img(src='assets/img/portfolio/9.jpg')
+							li
+								a(href='singleproject.html')
+									img(src='assets/img/portfolio/11.png')			
+
 			a.image.fit(href='#')
 				img(src='/img/pic01.jpg', alt='')
 			.inner
@@ -348,8 +429,8 @@ html(ng-app='myApp')
 			div  © 2014 Owen Chen
 
 			div
-				strong Personal 
-				| Porfolio
+				strong Web Design 
+				| by yours truly
 
 			div
 
