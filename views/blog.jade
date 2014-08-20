@@ -1,5 +1,131 @@
-//- This is the page for my blog/writing
-extends layout
-block content
-	.container
-		p Blog
+doctype html
+html
+	head
+
+		meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+		
+		title Owen Chen
+
+		meta(name='description', content='Audio Engineer')
+		meta(property='og:type', content='blog')
+		meta(property='og:title', content='Owen Chen')
+		meta(property='og:description', content='Audio Engineer')
+		
+		meta(property='og:site_name', content='Owen Chen')
+
+		link#jquery-captify-css(rel='stylesheet', href='/cascade/style/jquery.captify-ver=3.9.2.css', type='text/css', media='all')
+		link#jquery-jscrollpane-css(rel='stylesheet', href='/cascade/style/jquery.jScrollPane-ver=3.9.2.css', type='text/css', media='all')
+		link#jquery-qtip-css(rel='stylesheet', href='/cascade/style/jquery.qtip-ver=3.9.2.css', type='text/css', media='all')
+		link#jquery-nivo-slider-css(rel='stylesheet', href='/cascade/style/jquery.nivo-slider-ver=3.9.2.css', type='text/css', media='all')
+		link#jquery-fancybox-css(rel='stylesheet', href='/cascade/style/fancybox/jquery.fancybox-ver=3.9.2.css', type='text/css', media='all')
+		link#google-font-open-sans-css(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans%3A400%2C300&ver=3.9.2', type='text/css', media='all')
+		link#cascade-custom-css-css(rel='stylesheet', href='/cascade/style/custom_styles-ver=3.9.2.css', type='text/css', media='all')			
+
+		script(type='text/javascript', src='/cascade/js/main-ver=3.9.2.js')
+		script(type='text/javascript', src='/cascade/js/cascade_contact_form-ver=3.9.2.js')
+		script(type='text/javascript', src='/cascade/js/cascade_comment_form-ver=3.9.2.js')		
+
+
+
+
+		link(rel='stylesheet', href='/cascade/style.css', type='text/css', media='screen')
+
+		script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js?ver=1.6.4')
+		script(type='text/javascript', src='/cascade/js/jquery.ba-bqq.min-ver=3.9.2.js')
+		script(type='text/javascript', src='/cascade/js/jquery.easing-ver=3.9.2.js')
+		script(type='text/javascript', src='/cascade/js/jquery.captify-ver=3.9.2.js')
+		script(type='text/javascript', src='/cascade/js/jquery.blockUI-ver=3.9.2.js')
+		script(type='text/javascript', src='/cascade/js/jquery.bxSlider-ver=3.9.2.js')
+		script(type='text/javascript', src='/cascade/js/jquery.qtip.min-ver=3.9.2.js')
+		script(type='text/javascript', src='/cascade/js/jquery.fancybox-ver=3.9.2.js')
+		script(type='text/javascript', src='/cascade/js/jquery.mousewheel-ver=3.9.2.js')
+		script(type='text/javascript', src='/cascade/js/jquery.jScrollPane-ver=3.9.2.js')
+		script(type='text/javascript', src='/cascade/js/jquery.nivo.slider-ver=3.9.2.js')
+		script(type='text/javascript', src='/cascade/js/jquery.isotope.min-ver=3.9.2.js')
+
+
+		link(href='/css/siteStyle.css', rel='stylesheet')
+		link(href='/fonts/customFonts.css', rel='stylesheet', type='text/css')
+		link(href='/fonts/open-sans.css', rel='stylesheet', type='text/css')  
+		link(href='/css/animate.css', rel='stylesheet')                                                    			
+		//- script(type='text/javascript', src='http://maps.google.com/maps/api/js?sensor=false&ver=3.9.2')	
+	
+	body.home.blog.custom-background.cascade_light.sandpaper
+		.header.main.box-center
+			.layout-header.clear-fix.overflow-fix
+				.layout-header-left
+					a.header-logo-link(href='index.html')
+					h1
+						| Owen Chen
+					h5
+						i Fusion Guitarist, Audio Engineer, CompSci &amp; CogSci @ UCBerkeley.
+				.layout-header-right
+					ul.no-list.header-menu
+						li.header-menu-download
+							a(href='', target='_blank') Contact
+						li.header-menu-mail
+							a(href='mailto:owenchen@berkeley.edu') Send email	
+			.menu-main-menu-container
+				ul#menu-main-menu.cascade_header_menu.cascade_header_bottom_menu.cascade_clearfix(style="border-radius: 15px;box-shadow:  2px 2px 2px 2px #ccc;")
+					li#menu-item-188.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-188
+						a(href='about/index.html') About
+					li#menu-item-218.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-218
+						a(href='portfolio/index.html') Portfolio
+					li#menu-item-187.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-187
+						a(href='blog/index.html') Music
+					li#menu-item-186.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-186
+						a(href='resume-certifications/index.html') Blog
+					li#menu-item-185.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-185
+						a(href='contact/index.html') Contact												
+
+
+		.content.main.box-center
+			.cascade
+				ul.cascade-menu
+					li#cascade-portfolio-7.cascade-color-blue.cascade-tab-1.animated.fadeIn._1
+						a.cascade-menu-link(href='index.html#!/about', style="background-image: url('/cascade/images/guitar.jpg')")
+							span.cascade_title About
+							span.cascade_subtitle Past | Current | Future
+					li#cascade-portfolio-196.cascade-color-purple.cascade-tab-2.animated.fadeIn._2
+						a.cascade-menu-link(href='index.html#!/portfolio', style="background-image: url('/cascade/images/tabs/purple_briefcase.png')")
+							span.cascade_title Portfolio
+							span.cascade_subtitle Code &amp Design | Music Production 
+							
+					li#cascade-portfolio-69.cascade-color-lime.cascade-tab-3.animated.fadeIn._3
+						a.cascade-menu-link(href='index.html#!/blog', style="background-image: url('/cascade/images/tabs/lime_lightbulb.png')")
+							span.cascade_title Music
+							span.cascade_subtitle Recordings | Resources | Updates
+					li#cascade-portfolio-86.cascade-color-orange.cascade-tab-4.animated.fadeIn._4
+						a.cascade-menu-link(href='index.html#!/resume-certifications', style="background-image: url('/cascade/images/tabs/orange_document.png')")
+							span.cascade_title Blog
+							span.cascade_subtitle Writing | Books | Tech | Life						
+
+		.footer
+			hr.footer-line
+			.main.box-center.layout-footer.clear-fix.overflow-fix
+				
+				
+				.layout-footer-left.latest-tweets
+					#latest-tweets
+						ul
+							li
+								p
+									| Owen Chen - Personal Site  © 2014
+									
+									
+							
+
+			
+				.layout-footer-right
+					ul.no-list.social-list
+						li Connect
+						li
+							a.social-soundcloud(href='')
+						li
+							a.social-linkedin(href='')
+						li
+							a.social-twitter(href='')
+						li
+							a.social-facebook(href='')
+
+
