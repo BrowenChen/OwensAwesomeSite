@@ -12,7 +12,7 @@ html
 		meta(property='og:description', content='Audio Engineer')
 		
 		meta(property='og:site_name', content='Owen Chen')
-
+		
 		link#jquery-captify-css(rel='stylesheet', href='/cascade/style/jquery.captify-ver=3.9.2.css', type='text/css', media='all')
 		link#jquery-jscrollpane-css(rel='stylesheet', href='/cascade/style/jquery.jScrollPane-ver=3.9.2.css', type='text/css', media='all')
 		link#jquery-qtip-css(rel='stylesheet', href='/cascade/style/jquery.qtip-ver=3.9.2.css', type='text/css', media='all')
@@ -24,6 +24,7 @@ html
 		script(type='text/javascript', src='/cascade/js/main-ver=3.9.2.js')
 		script(type='text/javascript', src='/cascade/js/cascade_contact_form-ver=3.9.2.js')
 		script(type='text/javascript', src='/cascade/js/cascade_comment_form-ver=3.9.2.js')		
+
 
 
 
@@ -65,38 +66,57 @@ html
 							a(href='', target='_blank') Contact
 						li.header-menu-mail
 							a(href='mailto:owenchen@berkeley.edu') Send email	
-			.menu-main-menu-container
-				ul#menu-main-menu.cascade_header_menu.cascade_header_bottom_menu.cascade_clearfix(style="border-radius: 15px;box-shadow:  2px 2px 2px 2px #ccc;")
-					li#menu-item-188.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-188
-						a(href='about/index.html') About
-					li#menu-item-218.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-218
-						a(href='portfolio/index.html') Portfolio
-					li#menu-item-187.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-187
-						a(href='blog/index.html') Music
-					li#menu-item-186.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-186
-						a(href='resume-certifications/index.html') Blog
-					li#menu-item-185.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-185
-						a(href='contact/index.html') Contact												
+
+
+			#navPics
+				ul
+					li 
+						a(img="/") pic1 
+					li 
+						a(img="/") pic2 
+					li 
+						a(img="/") pic3 
+					li 
+						a(img="/") pic4 
+			#topNav
+				ul
+					li About
+					li Portfolio
+					li Music
+					li Blog
+	
+			//- .menu-main-menu-container
+			//-	ul#menu-main-menu.cascade_header_menu.cascade_header_bottom_menu.cascade_clearfix(style="border-radius: 15px;box-shadow:  2px 2px 2px 2px #ccc;")
+			//-		li#menu-item-188.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-188
+			//-			a(href='about/index.html') About
+			//-		li#menu-item-218.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-218
+			//-			a(href='portfolio/index.html') Portfolio
+			//-		li#menu-item-187.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-187
+			//-			a(href='blog/index.html') Music
+			//-		li#menu-item-186.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-186
+			//-			a(href='resume-certifications/index.html') Blog
+			//-		li#menu-item-185.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-185
+			//-			a(href='contact/index.html') Contact												
 
 
 		.content.main.box-center
 			.cascade
 				ul.cascade-menu
 					li#cascade-portfolio-7.cascade-color-blue.cascade-tab-1.animated.fadeIn._1
-						a.cascade-menu-link(href='index.html#!/about', style="background-image: url('/cascade/images/guitar.jpg')")
+						a.cascade-menu-link(href='index.html#!/about', style="background-image: url('/img/sunrise.jpg')")
 							span.cascade_title About
 							span.cascade_subtitle Past | Current | Future
 					li#cascade-portfolio-196.cascade-color-purple.cascade-tab-2.animated.fadeIn._2
-						a.cascade-menu-link(href='index.html#!/portfolio', style="background-image: url('/cascade/images/tabs/purple_briefcase.png')")
+						a.cascade-menu-link(href='index.html#!/portfolio', style="background-image: url('/img/logic.png')")
 							span.cascade_title Portfolio
 							span.cascade_subtitle Code &amp Design | Music Production 
 							
 					li#cascade-portfolio-69.cascade-color-lime.cascade-tab-3.animated.fadeIn._3
-						a.cascade-menu-link(href='index.html#!/blog', style="background-image: url('/cascade/images/tabs/lime_lightbulb.png')")
+						a.cascade-menu-link(href='index.html#!/blog', style="background-image: url('/img/guitar.jpg')")
 							span.cascade_title Music
 							span.cascade_subtitle Recordings | Resources | Updates
 					li#cascade-portfolio-86.cascade-color-orange.cascade-tab-4.animated.fadeIn._4
-						a.cascade-menu-link(href='index.html#!/resume-certifications', style="background-image: url('/cascade/images/tabs/orange_document.png')")
+						a.cascade-menu-link(href='index.html#!/resume-certifications', style="background-image: url('/img/bike.png')")
 							span.cascade_title Blog
 							span.cascade_subtitle Writing | Books | Tech | Life						
 

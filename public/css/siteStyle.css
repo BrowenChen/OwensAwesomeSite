@@ -1,0 +1,62 @@
+
+
+
+.layout-header-left h1{
+
+	font-family: 'Special Elite', cursive; 
+}
+
+
+.cascade li a{
+	 border-radius: 20px;
+	 box-shadow:  5px 4px 6px 4px #ccc;
+}
+
+#topNav {
+	text-align: center;
+	position: relative;
+	width:100%;
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+
+}
+
+#topNav ul {
+
+	list-style-type: none;
+}
+
+#topNav li{
+	font-weight: bold;
+
+	margin: 1em 0;
+	width:13%;
+	display: inline-block;
+	text-transform: uppercase;
+}
+
+
+
+
+#navPics {
+	text-align: center;
+	position: relative;
+	width:100%;
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+
+}
+
+#navPics ul {
+
+	list-style-type: none;
+}
+
+#navPics li{
+	font-weight: bold;
+
+	margin: 1em 0;
+	width:13%;
+	display: inline-block;
+	text-transform: uppercase;
+}
