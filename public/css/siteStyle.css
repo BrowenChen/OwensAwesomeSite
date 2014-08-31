@@ -192,6 +192,15 @@ text-decoration:none;
 	opacity: 1;
 }
 
+.bioMain a {
+	opacity: .7;
+}
+
+.bioMain a:hover {
+	opacity: 1;
+}
+
+
 
 #newsCarousel {
 	opacity: .7;

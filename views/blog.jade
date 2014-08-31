@@ -61,7 +61,7 @@ html
 
 
 		link(href='/css/slick.css', rel='stylesheet')
-
+		link(href='/css/animate.css', rel='stylesheet')
 
 		link(href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', rel='stylesheet')
 
@@ -76,7 +76,7 @@ html
 
 
 		.header.main.box-center
-			.layout-header.clear-fix.overflow-fix
+			.layout-header.clear-fix.overflow-fix.animated.fadeIn._1
 				.layout-header-left
 					a.header-logo-link(href='index.html')
 					h1
@@ -91,26 +91,26 @@ html
 							a(href='mailto:owenchen@berkeley.edu') Send email	
 
 
-			#topNav
+			#topNav.animated.fadeIn._2
 				ul
 					li 
 						img.img-thumbnail.img-responsive(src="/img/sunrise.jpg", style="border-radius: 9999px;")
 						br
-						a About
+						a(href="/bio") About
 					li 
 						img.img-thumbnail.img-responsive(src="/img/guitarz.jpg", style="border-radius: 9999px;") 
 						br
-						a Portfolio
+						a(href="/portfolio") Portfolio
 					li 
 						img.img-thumbnail.img-responsive(src="/img/drumset.jpg", style="border-radius: 9999px;") 
 						br
-						a Music
+						a(href="/") Music
 					li 
 						img.img-thumbnail.img-responsive(src="/img/bike.jpg", style="border-radius: 9999px;") 
 						br
 						a Blog
 	
-		.content.bodyMain.box-center
+		.content.bodyMain.box-center.animated.fadeIn._3
 			.jumbotron(style="height:inherit; box-shadow: 1px 1px 1px #888888; border-radius: 5px;") 
 			
 				.row
@@ -118,11 +118,13 @@ html
 						img.img-thumbnail(src="/img/me.JPG", style="border-radius: 15px; height: 200px;") 
 
 					h3 Hello.
-					h4(style="font-size: 120%;line-height: 130%;")  I’m Owen, a current undergraduate scholar at the University of California Berkeley pursuing a dual degree in Computer Science and Cognitive Sciences. I’m a music fanatic, software developer, jazz guitarist and drummer, violinist, bookworm, triathlete, biohacker, aspiring memory athlete, retired yo-yo master, and hopefully one day an entrepreneur on the frontier of neural engineering (somehow tying in my love of fusion and EDM music production as well). 
-					h4(style="font-size: 120%;line-height: 130%;") Here you can learn more about me, the stuff going on inside my head, and stay tuned with what I’m currently working on. I love quantifiable challenges and I strongly believe in diversifying my knowledge as much as possible, so I hope to share my journey with whoever stumbles across my site. It’s currently in progress, but it is what it is. (Bio coming soon)
-					h5 - Owen 
-					
-				br
+					h4(style="font-size: 122%;line-height: 130%;")  I’m Owen, a current undergraduate scholar at the University of California Berkeley pursuing a dual degree in Computer Science and Cognitive Sciences. I’m a music fanatic, software developer, jazz guitarist and drummer, violinist, bookworm, triathlete, biohacker, aspiring memory athlete, retired yo-yo master, and hopefully one day an entrepreneur on the frontier of neural engineering (somehow tying in my love of fusion and EDM music production as well). 
+					h4(style="font-size: 122%;line-height: 130%;") Here you can learn more about me, the stuff going on inside my head, and stay tuned with what I’m currently working on. I love quantifiable challenges and I strongly believe in diversifying my knowledge as much as possible, so I hope to share my journey with whoever stumbles across my site. It’s currently in progress, but it is what it is. 
+						
+
+					h4 - Owen
+						a.h5.alignright(href="/bio", style="text-align:right;")    Read more..
+				
 				hr
 				.row
 					.col-sm-6.stats
@@ -220,7 +222,7 @@ html
 				
 		br
 		
-		.content.bodyMain.box-center
+		.content.bodyMain.box-center.animated.fadeIn._4
 			.jumbotron(style="height:inherit; box-shadow: 1px 1px 1px #888888; border-radius: 5px;") 
 				#latestNews.row(style="height: 35%;")
 					h1.title.title-top-margin(style="font-size: 250%;  text-align: center;") Current News
@@ -229,7 +231,10 @@ html
 					#newsCarousel.single-item(style="width: 75%;margin: 0 auto;")
 						.div 
 							p IBM Watson Cloud Developer
-							|  Builind startup that uses Watson API to analyze medical datasets 
+							|  Building startup that uses Watson API to analyze medical datasets. 
+						.div 
+							p TechStars London
+							|  Worked at Zzish under the TechStars program, early-stage EdTech startup hoping to revolutionize educational apps.					
 						.div 
 							p JazzHub
 							| Dashboard with analysis and practice tools for musicians, especially jazz
@@ -297,7 +302,7 @@ html
 						
 		br
 
-		.content.bodyMain.box-center
+		.content.bodyMain.box-center.animated.fadeIn._4
 			.jumbotron(style="height:inherit; box-shadow: 1px 1px 1px #888888; border-radius: 5px;") 
 
 				#soundCloud.row(style="height: 75%;")
@@ -374,7 +379,7 @@ html
 
 
 
-		.footer
+		.footer.animated.fadeIn._4
 			hr.footer-line
 			.main.box-center.layout-footer.clear-fix.overflow-fix
 				
