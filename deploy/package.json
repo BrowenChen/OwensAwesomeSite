@@ -1,5 +1,5 @@
 {
-  "name": "application-name",
+  "name": "owenwebsite",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
@@ -9,5 +9,13 @@
     "jade": "~0.31.2",
     "method-override": "^1.0.0",
     "morgan": "^1.0.0"
-  }
+  },
+  "description": "Start an awesome app with AngularJS on the front, Express + Node on the back. This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app for those who want to use Node to serve their app.",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause"
 }
