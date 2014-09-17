@@ -115,10 +115,24 @@ html
 			h1(style="text-align: center;") Programming Projects
 			h4(style="text-align: center;") Currently under Construction
 			hr
+
 			.row
 				br
 				.col-sm-3
-					img.img-thumbnail.img-responsive(src='', style="height: 350px; border-radius: 15px;")
+					img.img-thumbnail.img-responsive(src='/img/chordally.png', style="height: 350px; border-radius: 15px;")					
+				.col-sm-9
+					h2 Chordally
+
+					h4 Jazz improvisation is a different language to master. We aim to lower that learning curve. 
+					h4 This is a startup that my current roommate (a fellow compSci and CogSci double major and gigging member of UCJazz), have wanted to do for a long time. Then one Sunday night, we were bored of doing homework and we got to work. A few days later, V 1.0 of Chordally for the web and android was born.
+					h4 The core vision of our product is to apply all of the knowledge that we have gathered to create the most efficient, organized, and personalized learning experience to learn jazz improvisation. Although our targeted niche is very very small (jazz musicians), this product is something that helps us tremendously in maximizing the long hours spent in the practice rooms. Thinking in intervals in jazz is a huge aspect of improvisation, as navigating different chord changes throughout tunes means you gotta be constantly changing keys on the fly. Hopefully, our product will facilitate this process and aid us into becoming more subconscious in our playing, rather than tripping over the changes thinking too much. 
+					a(href="http://jazzanalyze.herokuapp.com") Check it out here
+
+			hr
+			.row
+				br
+				.col-sm-3
+					img.img-thumbnail.img-responsive(src='/img/adaptiveLearning.jpg', style="height: 350px; border-radius: 15px;")
 				.col-sm-9
 					h2 Adaptive Learning Algorithms
 					h3
@@ -128,24 +142,14 @@ html
 						a(href="http://github.com/browenchen") here
 					h4 A large part of my decision to work in London at an EdTech company was for this opportunity to try and make an impact in an early stage startup by working on technology I’ve been fascinated with, as well as simultaneously fulfilling my wanderlust in a foreign country for a second summer. Integrating the adaptive algorithms module into the backend SDK’s was one of my tasks for this past summer, and I set up a demo web server to demonstrate the algorithms as well as small web apps to go along with them. 
 					h4 On the technical side of things, you can read up more about it here, but it was primarily coded up with a NodeJS backend, AngularJS/javascript front end with Jade and CSS. The algorithms were based of SuperMemo’s SM-2, and other findings in research papers. 
-			hr
+					a(href="http://educationalalgorithms.herokuapp.com/") I finally got around deploying it here 
+
+
+			
 			.row
 				br
 				.col-sm-3
-					img.img-thumbnail.img-responsive(src='', style="height: 350px; border-radius: 15px;")
-
-
-
-
-				.col-sm-9
-					h2 LearningHub Teacher Dashboard
-					h4 This was another side project that I developed over the summer, although it has a lot more work to be done on it (especially the UI). Essentially, this is the MVP of the live dashboard that teachers will use to monitor, track, and update their students. Again, this was with NodeJS, AngularJS, and web sockets for the live analysis.  It was integrated for use by the end of the summer by Code Kingdoms, an RPG game used to teach kids to code. 
-					h4 One demo app that we were testing on iPad classrooms sends live data which was successfully displayed on these dashboards, and Angular was used for the various sorting and analysis options. 
-			hr
-			.row
-				br
-				.col-sm-3
-					img.img-thumbnail.img-responsive(src='', style="height: 350px; border-radius: 15px;")
+					img.img-thumbnail.img-responsive(src='/img/avocadoDemo.png', style="height: 350px; border-radius: 15px;")
 
 				.col-sm-9
 					h2 Avocado
@@ -156,29 +160,30 @@ html
 
 
 
-
+			hr
 			.row
 				br
 				.col-sm-3
-					img.img-thumbnail.img-responsive(src='', style="height: 350px; border-radius: 15px;")
+					img.img-thumbnail.img-responsive(src='/img/max1.jpg', style="height: 350px; border-radius: 15px;")
 
 				.col-sm-9
 					h2 Image2Music
 					h4 This was a fun project built in my Music 158 class, which was computational music. Throughout the course semester, we worked with synthesized sounds to create various plugins and sounds, and my final project was a “one-man-band” type themed image to music app. 
 					h4 The backing track was created through a single 440 Hz sine wave, which was expanded into major, minor, and harmonic minor scales based on mathematical calculations for the frequencies. Then I assigned the intervals to each note, and created a simple ii V i progression using chords with the tones. 
 					h4 Next up, I extracted all the RGB pixel data into a matrix, and was able to iterate through the values, scaling each number into a certain MIDI frequency within a chosen scale, producing diatonic notes that didn’t just sound like random noise. Lastly, just for kicks, I added in a vocoder feature that took a sample of my voice, and manipulated the pitch frequency with my MIDI control, allowing me to solo over my rough track. It was a pretty fun intro to computerized music.
-
+			hr
 			.row
 				br
-				.col-sm-3
-					img.img-thumbnail.img-responsive(src='', style="height: 350px; border-radius: 15px;")					
-				.col-sm-9
-					h2 JazzHub
-
-					h4 This is a semi completed project that I intend to expand a lot on. Currently, it’s a jazz analysis and practice generator, which includes features such as harmonic analysis of a phrase, random etude generator, and a reference for which chords/modes can be used where
-					h4 Currently written in python, but I have plans to create a dashboard like hub where musicians can track progress and use these web apps for their practice. 
-
-
+				.col-sm-12
+					img.img-thumbnail.img-responsive(src='/img/classroomPrototype.png', style=" border-radius: 20px;")
+					br
+				.col-sm-12
+					br
+					h2 LearningHub Teacher Dashboard
+					
+					h4 This was another side project that I developed over the summer, although it has a lot more work to be done on it (especially the UI). Essentially, this is the MVP of the live dashboard that teachers will use to monitor, track, and update their students. Again, this was with NodeJS, AngularJS, and web sockets for the live analysis.  It was integrated for use by the end of the summer by Code Kingdoms, an RPG game used to teach kids to code. 
+					h4 One demo app that we were testing on iPad classrooms sends live data which was successfully displayed on these dashboards, and Angular was used for the various sorting and analysis options. 
+			hr
 			.row 
 				br
 				.col-sm-6

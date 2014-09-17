@@ -465,6 +465,12 @@ ul.no-list
 	background-color:#707070 !important;
 }
 
+.drum{
+	background-image:url('img/owenDrum.jpg');
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+}
+
 /**************************************************************************/
 /* Qtip                                                                   */
 /**************************************************************************/

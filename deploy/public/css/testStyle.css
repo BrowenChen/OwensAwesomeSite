@@ -4,6 +4,10 @@
   margin: 0;
   font-family: 'Open Sans Condensed', sans-serif;
 
+  background-image:url('img/owenDrum.jpg');
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+
 }
 .navbar-default {
   background: inherit;
