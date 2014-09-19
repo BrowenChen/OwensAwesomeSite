@@ -18,6 +18,10 @@ exports.bio = function(req, res) {
 }
 
 
+exports.blog = function(req, res){
+	res.render('blog');
+}
+
 exports.portfolio = function(req, res){
 	res.render('portfolio');
 }

@@ -65,6 +65,8 @@ app.get('/partials/:name', routes.partials);
 
 app.get('/bio', routes.bio);
 app.get('/portfolio', routes.portfolio)
+app.get('/blog', routes.blog);
+
 
 
 // JSON API

@@ -1,0 +1,116 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		title Owen Chen
+		meta(name='description', content='A blog about nothing')
+		meta(name='HandheldFriendly', content='True')
+		meta(name='MobileOptimized', content='320')
+		meta(name='apple-mobile-web-app-capable', content='yes')
+		meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
+		link(rel='canonical', href='index.html')
+		link(rel='shortcut icon', href='assets/images/favicon.ico')
+		link(rel='icon', type='img/png', href='assets/images/favicon-196x196.png', sizes='196x196')
+		link(rel='icon', type='img/png', href='assets/images/favicon-160x160.png', sizes='160x160')
+		link(rel='icon', type='img/png', href='assets/images/favicon-96x96.png', sizes='96x96')
+		link(rel='icon', type='img/png', href='assets/images/favicon-16x16.png', sizes='16x16')
+		link(rel='icon', type='img/png', href='assets/images/favicon-32x32.png', sizes='32x32')
+		// <link rel="stylesheet" href="">
+		link(rel='stylesheet', href='http://brick.a.ssl.fastly.net/Linux+Libertine:400,400i,700,700i/Open+Sans:400,400i,700,700i')
+		link(rel='stylesheet', href='http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css')
+		link(rel='stylesheet', type='text/css', media='screen', href='css/main.css')
+		link(rel='stylesheet', type='text/css', media='print', href='css/print.css')
+		script(src='https://code.jquery.com/jquery-1.11.0.min.js')
+		script(type='text/javascript', src='/js/jquery.fitvids.js')
+		script(type='text/javascript', src='/js/index.js')
+		script(type='text/javascript', src='/js/readingTime.min.js')
+	body
+		
+		//- a.logo-readium(href='index.html')
+			//- span.logo(style="background-image: url('assets/images/vp_logo.jpg')")
+		
+		
+		.page-content
+			.wrapper
+				.teaserimage
+					.teaserimage-image(style="background-image: url('/img/yosemite.jpg')")
+						| Teaser Image
+				header.blog-header
+					a.blog-logo(href='index.html', style="background-image: url('img/me.JPG')") Victor Pontis
+					h1.blog-title Owen Chen
+					h2.blog-description A blog about my thoughts
+					.custom-links
+						a.icon-twitter(href='https://twitter.com/viccypont')
+							i.fa.fa-twitter
+						|         &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+						a.icon-facebook(href='https://facebook.com/vpontis')
+							i.fa.fa-facebook
+						|         &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+						a.icon-github(href='https://github.com/vpontis')
+							i.fa.fa-github
+						|         &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+						a(href='about/index.html') About
+						|       &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+						a(href='projects/index.html') Projects
+				script.
+					(function ($) {
+					"use strict";
+					$(document).ready(function(){
+					var $window = $(window),
+					$image = $('.teaserimage-image');
+					$window.on('scroll', function() {
+					var top = $window.scrollTop();
+					if (top < 0 || top > 1500) { return; }
+					$image
+					.css('transform', 'translate3d(0px, '+top/3+'px, 0px)')
+					.css('opacity', 1-Math.max(top/700, 0));
+					});
+					$window.trigger('scroll');
+					});
+					}(jQuery));
+				main.content(role='main')
+					.cf.frame
+						article.post(itemscope='', itemtype='http://schema.org/BlogPosting', role='article')
+							.article-item
+								header.post-header
+									h2.post-title(itemprop='name')
+										a(href='taking-time-off-mit/index.html', itemprop='url') Why I&apos;m taking time away from MIT
+								section.post-excerpt(itemprop='description')
+									p
+										| As I write this I am supposed to be just finishing up my last first-day-of-school at MIT. I should be a senior majoring in computer science and physics. Instead, I am taking the fall off from school and right now am in San Francisco working on a startup called PicnicHealth,...
+								.post-meta
+									time(datetime='09 September 2014') 09 September 2014
+								div
+						article.post(itemscope='', itemtype='http://schema.org/BlogPosting', role='article')
+							.article-item
+								header.post-header
+									h2.post-title(itemprop='name')
+										a(href='welcome-to-my-blog/index.html', itemprop='url') Welcome to My Blog!
+								section.post-excerpt(itemprop='description')
+									p
+										| Welcome to my new blog. Just setting this up now, so hopefully content will be coming soon!
+								.post-meta
+									time(datetime='09 September 2014') 09 September 2014
+								div
+					nav.pagination(role='navigation')
+						span.page-number Page 1 of 1
+		
+		
+		footer.site-footer
+			a.subscribe(href='feed.xml.rss')
+				span.tooltip
+					i.fa.fa-rss
+					|  Subscribe!
+			.inner
+				section.copyright
+					| All content copyright 
+					a(href='mailto:vpontis@gmail.com') Victor Pontis
+					|  &copy; 2014 &bull; All rights reserved.
+				section.poweredby
+					| Made with 
+					a(href='http://jekyllrb.com')  Jekyll
+		
