@@ -144,7 +144,19 @@
 		height: 100%;
 		width: 100%;
 	}
+	.contact-headline {
+		border-bottom: 3px solid yellow;
+		padding: 8px;
+	}		
 	/*Tech Section*/
+	.tech-section {
+		text-align: center;
+	}
+
+	.tech-section .headline {
+		width: 100%;
+		border: 1px solid green;
+	}
 	.tech-headline {
 		border-bottom: 3px solid yellow;
 		padding: 8px;
