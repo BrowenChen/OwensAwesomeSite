@@ -3133,6 +3133,14 @@
 		}
 
 		@media screen and (max-width: 980px) {
+			.avatar-heading {
+				display:none;
+				/*visibility: hidden;*/
+			}
+
+			.avatar-heading .avt {
+
+			}
 
 			.spotlights > section {
 				display: block;
@@ -3157,6 +3165,11 @@
 		}
 
 		@media screen and (max-width: 736px) {
+
+			.avatar-heading .avt{
+				display:none;
+				/*visibility: hidden;*/
+			}
 
 			.spotlights > section > .image {
 				height: 50vh;
@@ -3259,6 +3272,7 @@
 			}
 
 			@media screen and (max-width: 1180px) {
+		
 
 				.wrapper > .inner {
 					width: 90%;
@@ -3536,6 +3550,7 @@
 	}
 
 		@media screen and (max-width: 1180px) {
+
 
 			#sidebar + #wrapper + #footer {
 				margin-left: 0;
@@ -3842,7 +3857,14 @@
 			opacity: 0;
 		}
 
+		@media screen and (max-width: 1180px){
+				.avatar-heading {
+					display:none;
+					/*visibility: hidden;*/
+				}
+		}
 		@media screen and (max-width: 1180px) {
+		
 
 			#sidebar {
 				height: 3.5em;
@@ -3905,10 +3927,10 @@
 		}
 
 		@media screen and (max-width: 736px) {
-
+/*
 			#sidebar {
 				display: none;
-			}
+			}*/
 
 		}
 
