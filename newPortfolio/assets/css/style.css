@@ -58,7 +58,7 @@
 	}	
 
 	/*Avatar Subheading*/
-	#name {
+	#nameAv {
 		color: #fff;
 		font-family: 'opensans-light', sans-serif;
 		margin-bottom: 7px;
@@ -121,6 +121,11 @@
 		box-shadow: 1px 1px 1px rgb(136, 136, 136);
 		height: 100%;
 		width: 100%;
+	}
+
+	.no-border {
+		border: none;
+		box-shadow: none;
 	}
 
 	.bandPicOne {
