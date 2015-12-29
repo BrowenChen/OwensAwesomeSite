@@ -203,6 +203,20 @@
 		text-align: center;
 	}
 
+	#one {
+		color: #D4D4D4;
+	}
+
+
+	#one .content {
+		border-bottom: 1px solid #462446;
+	}
+
+	.tech-section {
+		border-top: 1px solid #462446;
+		border-bottom: 1px solid #462446;		
+	}
+
 	.tech-headline {
 		padding: 8px;
 		width: 100%;
@@ -264,6 +278,15 @@
 
 	.portfolio-section p {
 		color: black;
+	}
+
+	.proj-pic {
+		border: 2px solid white;
+	}
+
+	.image {
+		border-right: 1px solid #462446;
+		border-bottom: 1px solid #462446;
 	}
 
 	.port-one {
@@ -333,3 +356,4 @@
 		padding-top: 30px;			
 
 	}
+
